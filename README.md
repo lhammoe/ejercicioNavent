@@ -1,9 +1,8 @@
-# ejercicioNavent
+# Ejercicio Navent
 
 Sobre los ejercicios:
 
-Desarrollé un proyecto maven con algunas librerías de spring (spring-boot más bien) intentando que todo compile, si bien no 
-era el objetivo del ejercicio.
+Desarrollé un proyecto maven con algunas librerías de spring (spring-boot más bien). Si bien compila, le faltan varias cuestiones para que sea realmente un proyecto.
 
 1- Para este ejercicio, asumí que ya están implementadas las transacciones a la base de datos. También, por simplicidad, se 
 implementó una capa de servicio y una capa DAO.
