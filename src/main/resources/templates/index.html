@@ -1,0 +1,41 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title data-tid="ejercicio.meta.title">Ejercicio Navent</title>
+  <meta data-tid="ejercicio.meta.description" name="description" content="Registro de un pedido">
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+
+<div>
+      <!-- <img alt="" src="img/logo.gif"> -->
+	<h1>Registro de Pedido</h1>
+</div>
+
+<form id="form-ajax-pedido" method="post" action="/pedidos/grabar">
+<fieldset>
+	<div>
+		<label>Nombre:</label>
+	 	<input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre del pedido" required oninput="validate(this)" size="50">
+	</div>
+	<div>
+  		<label>Monto:</label>
+  		<input type="text" id="monto" name="monto" placeholder="Ingrese un entero positivo" required pattern="\d*" size="25">
+	</div>
+	<div>
+  		<label>Descuento:</label>
+  		<input type="text" id="descuento" name="descuento" placeholder="Ingrese un entero positivo" pattern="\d*" size="25">
+  	</div>
+	<input type="submit" value="Grabar" /> 
+</form>
+
+
+<script src="js/index.js" data-rel-js></script>
+
+</body>
+</html>
